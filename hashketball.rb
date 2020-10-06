@@ -141,6 +141,7 @@ end
 
 def get_points(player_name, players)
   players.each do |player| 
+<<<<<<< HEAD
     if player[:player_name].eql?(player_name)
       return player[:points]
     end
@@ -253,3 +254,10 @@ def get_big_shoe_rebounds(players)
   end
   return rebounds
 end
+=======
+    player[:player_name] == player_name
+      return player[:points]
+  end
+  return -1
+end
+>>>>>>> 1ca1c2ff29d706f784e9b4f395eb164e4f7cee10
